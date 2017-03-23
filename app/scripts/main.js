@@ -55,7 +55,7 @@ $.fn.PureText = function() {
     .filter(function(argument) {
     	return (argument.length > 0);
     });
-    return pureArray;
+    return pureArray.join(' ');
 };
 var output = $('#container').PureText(); // should return “Lorem Ipsum is simply”
 console.log(output);

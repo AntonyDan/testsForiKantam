@@ -1,0 +1,88 @@
+/*---------------------------------First Task----------------*/
+.first_task{
+  width: 500px;
+  margin: 20px auto;
+  text-align: center;
+}
+  .anchor{
+    color: #0747F7;
+    border: 1px solid black;
+    padding: 2px;
+    font-size: 20px;
+    text-decoration: none;
+      &:before{
+        content: '>';
+      }
+      &:after{
+        content: '<';
+      }
+      &:active, &:hover, &:visited{
+        color: #0747F7;
+      }
+  }
+
+
+  /*---------------------------------Second Task----------------*/
+.second_task{
+  width: 600px;
+  margin: auto;
+  p{text-align: center;}
+}
+.accordion{
+  width: 400px;
+  border: 1px solid #000000;
+  margin: 10px auto;
+  padding: 20px;
+  &__item{
+    list-style: none;
+    border-bottom: 1px solid #000000;
+  }
+
+    &__checkbox{
+      height: 0px;
+      overflow: hidden;
+      width: 0px;
+      margin: -2px;
+    }
+    
+    &__label{
+      font-size: 20px;
+      display: block;
+      padding-bottom: 10px
+    }
+    
+    &__target{
+      padding: 0px 0px 10px 0px;
+      display: none;
+    }
+    &__checkbox:checked + &__label{
+      color: #0747F7;
+    }
+    &__checkbox:checked ~ &__target{
+      display: block;
+    }
+
+}
+/*---------------------------------Other Task----------------*/
+.third_task{
+  margin: 50px auto;
+  text-align: center;
+  table{
+    margin: 10px auto;
+  }
+}
+.fourth_task{
+  margin: 50px auto;
+  text-align: center;
+}
+.fifth_task{
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.sixth_task{
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
